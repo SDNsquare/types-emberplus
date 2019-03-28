@@ -1,0 +1,14 @@
+{
+    "name": "@types/emberplus",
+    "version": "0.1",
+    "description": "TypeScript definitions for EmberPlus",
+    "license": "MIT",
+    "main": "",
+    "types": "index",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:SDNsquare/types-emberplus.git"
+    },
+    "scripts": {},
+    "typeScriptVersion": "3.3.400"
+}
