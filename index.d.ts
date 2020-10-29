@@ -1,13 +1,13 @@
 declare module 'emberplus' {
   export function Decoder(packet: any): any;
   export class EmberClient {
-    public root: Node;
+    public root: Ember.Root;
     constructor(host: string, port: number);
     on(method: 'error', cb: (err: Error) => void);
     connect(): Promise<void>;
     disconnect(): Promise<void>;
     getElementByPath(path: string): Node;
-    setValue(node: Node, val: string);
+    setValue(node: Ember.Node, val: string);
     getDirectory(qnode?: any): any;
     expand(node: Node): void;
   }
