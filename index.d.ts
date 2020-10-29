@@ -8,7 +8,7 @@ declare module 'emberplus' {
     disconnect(): Promise<void>;
     getElementByPath(path: string): Node;
     setValue(node: Node, val: string);
-    getDirectory(qnode: any): any;
+    getDirectory(qnode?: any): any;
     expand(node: Node): void;
   }
   export class DeviceTree {

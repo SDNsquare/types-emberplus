@@ -1,6 +1,6 @@
 {
     "name": "@types/emberplus",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "TypeScript definitions for EmberPlus",
     "license": "MIT",
     "main": "",
