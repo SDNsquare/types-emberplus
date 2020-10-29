@@ -5,7 +5,10 @@ declare module 'emberplus' {
     constructor(host: string, port: number);
     on(method: 'error', cb: (err: Error) => void);
     connect(): Promise<void>;
+    disconnect(): Promise<void>;
     getElementByPath(path: string): Node;
+    setValue(node: Node, val: string);
+    getDirectory(qnode: any): any;
     expand(node: Node): void;
   }
   export class DeviceTree {
@@ -333,12 +336,14 @@ declare module 'emberplus' {
       toQualified(): any;
       unsubscribe(callback: any): any;
       update(other: any): any;
+      toJSON(): string;
     }
     class NodeContents {
       public identifier: string;
       static decode(ber: any): any;
       isOnline: any;
       encode(ber: any): void;
+      value: string;
     }
     class Parameter {
       static decode(ber: any): any;
